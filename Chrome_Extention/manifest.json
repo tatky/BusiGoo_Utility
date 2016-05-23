@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "BusiGoo Utility",
+	"description": "ビジネスgoo(https://business.goo.ne.jp/)を便利にする事を目指します",
+	"homepage_url": "https://github.com/tatky/BusiGoo_Utility",
+	"version": "1.0",
+	"content_scripts": [
+		{
+			"matches": ["https://business.goo.ne.jp/*"],
+			"all_frames": true,
+			"js": ["content_script.js"]
+		}
+	],
+	"web_accessible_resources": [
+		"embeded-script.js"
+	]
+}
